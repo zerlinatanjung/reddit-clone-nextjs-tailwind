@@ -43,7 +43,7 @@ function Header() {
         <button type="submit" hidden />
       </form>
 
-      <div className="mx-5 text-gray-500 space-x-2 items-center hidden lg:inline-flex ">
+      <div className="mx-5 text-gray-500 space-x-2 items-center hidden lg:inline-flex">
         <SparklesIcon className="icon" />
         <GlobeIcon className="icon" />
         <VideoCameraIcon className="icon" />
@@ -52,6 +52,21 @@ function Header() {
         <BellIcon className="icon" />
         <PlusIcon className="icon" />
         <SpeakerphoneIcon className="icon" />
+      </div>
+      <div className="ml-5 flex items-center lg:hidden">
+        <MenuIcon className="icon" />
+      </div>
+      {/* Sign in/Sign out Button */}
+      <div className="hidden lg:flex items-center space-x-2 border border-gray-100 p-2 cursor-pointer">
+        <div className="relative h-5 w-5 flex-shrink-0">
+          <Image
+            objectFit="contain"
+            src="https://links.papareact.com/23l"
+            layout="fill"
+            alt=""
+          />
+        </div>
+        <p className="text-gray-400">Sign In</p>
       </div>
     </div>
   );
